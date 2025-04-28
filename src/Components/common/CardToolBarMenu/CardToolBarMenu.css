@@ -1,0 +1,128 @@
+strong{
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 2vh 0;
+}
+
+button {
+    background-color: #161D27;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0.;
+}
+
+button:hover {
+    background-color: #D1B06B;
+    transform: scale(1.05); 
+}
+
+button:active {
+    transform: scale(0.95); 
+}
+
+.cards{
+    display: flex;
+    flex: 70%;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+    justify-content: center;
+}
+
+.recomindation-window{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #666;
+    height: 50vh;
+    background: #161D27;
+    border-radius: 10px;
+    position: relative;
+}
+
+.recomindation-window::after {
+    content: "Здесь будет отображен наш лучший работник для вашего случая";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #999;
+    font-size: 12px;
+}
+
+.lawyer-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-lawyer{
+    display: flex;
+    width: 60vw;
+}
+
+.lawyer-image{
+    height: 45vh;
+    width: auto;
+    margin: 0 2vw;
+}
+
+.info-lawyer{
+    display: flex;
+    flex-direction: column;
+}
+
+.position{
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.toolbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1F2732;
+    width: 25vw;
+    height: 45vh;
+    border: 2px dashed #D1B06B;
+    border-radius: 10px;
+}
+
+.case-tools{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    height: 20vh;
+    width: 24vw;
+}
+
+.lawyers-tools{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    height: 20vh;
+    width: 24vw;
+}
+
+.toolbar-title{
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 2vh;
+}
+
+.botton-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+}

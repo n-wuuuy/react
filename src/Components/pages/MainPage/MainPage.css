@@ -1,0 +1,176 @@
+.dilimiter-img{
+    margin-top: 3vh;
+    height: 7vh;
+    width: auto;
+}
+
+.image-container {
+    background-image: url('~/public/images/background.jpg');
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f2732cc;
+}
+
+.content {
+    position: relative;
+    z-index: 2; 
+    color: white; 
+    padding: 0vh 3vw; 
+}
+
+.info-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preson-img{
+    width: auto;
+    height: 61vh;
+    bottom: 0;
+    right: 350px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 37vw;
+}
+
+.title{
+    display: flex;
+    font-size: 2em;
+    margin-bottom: 3vh;
+}
+
+.description{
+    color:#D1B06B;
+    font-size: 1em;
+    margin-bottom: 4vh;
+}
+
+.btn{
+    font-size: 1em;
+    background-color: #D1B06B;
+    width: 17vw;
+    height: 10vh;
+}
+
+.content-page
+{
+    margin-top: 3vh;
+    display: flex;
+}
+
+.image-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: vh 2vw;
+}
+
+.title{
+    color: #FFFFFF;
+}
+
+.description-inf-part{
+    color: #FFFFFF;
+    font-size: 1.3em;
+    margin-bottom: 4vh;
+}
+
+.info-area-inf-part{
+    padding: 8vh 2vw;
+    padding-right: 7vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.person-card{
+    display: flex;
+}
+
+.img-desc{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 1vw;
+    font-size: 1.7em;
+}
+
+.statistics{
+    margin-top: 5vh;
+    display: flex;
+}
+
+.statistic{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    background-color: #3B434E;
+    height: 13vh;
+    width: 20vw;
+    margin-right: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+.information{
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+
+.img-inf-area{
+    height: 30vh;
+    width: auto;
+}
+
+.title-inf-part{
+    font-size: 3em;
+    color: #FFFFFF;
+}
+
+.dilimiter-img{
+    width: auto;
+    height: 8vh;
+    margin-bottom: 7vh ;
+}
+
+.information{
+    font-size: 1.5em;
+}
+
+.number-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    width: 6vw;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.number-box
+{
+    margin: 0;
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.img-line{
+    display: flex;
+    justify-content: center;
+}

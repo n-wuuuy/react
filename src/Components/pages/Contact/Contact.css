@@ -1,0 +1,110 @@
+.container_r{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-area_r{
+    margin-top: 4vh;
+    padding-left: 5vw;
+    margin-right: 5vw;
+    width: 45vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title_r{
+    font-size: 1.7em;
+    color: #ffffff;
+    margin-bottom: 3vh;
+}
+
+.description_r{
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+.btn_r{
+    width: 20vw;
+    height: 10vh;
+    background-color: #D1B06B;
+    color: #000;
+    font-size: 1.3em;
+}
+
+.contact-area_r{
+    display: flex;
+    width: 80vw;
+    height: 70vh;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card_r{
+    display: flex;
+    width: 45vw;
+    height: 60vh;
+    border: 15px solid #D7D7D7;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-title_r{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    font-size: 2.5em;
+}
+
+.contact-desc_r{
+    padding-top: 2vh;
+    display: flex;
+    margin: 2vh 5vw;
+    font-size: 1.5em;
+    color:#909090;
+}
+
+.contact-data_r{
+    padding-top: 5vh;
+    display: flex;
+    margin: 0vh 5vw;
+}
+
+.icon_r{
+    display: flex;
+    height: 10vh;
+    width: 10vh;
+    background-color: #D1B06B;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-icon_r{
+    height: 40%;
+    width: auto;
+}
+
+.contact_r{
+    display: flex;
+    margin-left: 1vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signature_r{
+    font-size: 1em;
+}
+
+.tel-number_r{
+    font-size: 1em;
+}
+
+.dilimiter-img{
+    width: 25%;
+    height: auto;
+}
