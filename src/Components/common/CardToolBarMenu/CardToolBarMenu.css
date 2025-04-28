@@ -49,6 +49,7 @@ button:active {
 }
 
 .recomindation-window::after {
+    content: "Здесь будет отображен наш лучший работник для вашего случая";
     position: absolute;
     bottom: 10px;
     left: 50%;
