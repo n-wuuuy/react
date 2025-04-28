@@ -13,7 +13,7 @@ const teamMembersData = [
       phone: '+375296438054',
       email: 'maks_zabelo@gmail.com',
       social: ['Facebook', 'LinkedIn', 'Twitter'],
-      imgSrc: './assets/images/five_page/person_1.png',
+      imgSrc: './images/five_page/person_1.png',
     },
     {
       id: 'item2',
@@ -25,7 +25,7 @@ const teamMembersData = [
       phone: '+375296458054',
       email: 'maria_petrova@gmail.com',
       social: ['Facebook', 'LinkedIn', 'Twitter'],
-      imgSrc: './assets/images/five_page/person_2.png',
+      imgSrc: './images/five_page/person_2.png',
     },
     {
       id: 'item3',
@@ -37,7 +37,7 @@ const teamMembersData = [
       phone: '+375296538054',
       email: 'advokat_sergo@gmail.com',
       social: ['Facebook', 'LinkedIn', 'Twitter'],
-      imgSrc: './assets/images/five_page/person_3.png',
+      imgSrc: './images/five_page/person_3.png',
     },
   ];
 
@@ -124,40 +124,47 @@ function AboutUsEmploee() {
                         <p><img src=".\images\IMAGE(7).png" /></p>
                     </h2>
                     <div class="team">
-                        <div class="draggable" draggable="true" id="item1">
+                    {team.map(member => (
+                        <div
+                            key={member.id}
+                            id={member.id}
+                            className="draggable"
+                            draggable
+                            onDragStart={e => handleDragStart(e, member.id)}
+                            onDragEnd={handleDragEnd}>
                             <div class="team-member">
-                                <img src=".\images\five_page\person_1.png" alt="John Turner" />
+                                <img src={member.imgSrc} alt="John Turner" />
                                 <div class="inf-member">
-                                    <h3>Martha Black</h3>
+                                    <h3>{member.name}</h3>
                                     <div class="signature">
                                         Должность
                                     </div>
-                                    <p><span class="yellow-text">Помощник адвоката</span></p>
+                                    <p><span class="yellow-text">{member.position}</span></p>
                                     <div class="signature">
                                         Стаж работы по специальности
                                     </div>
                                     <div class="inf-drag-drop">
-                                        13 лет
+                                        {member.experience}
                                     </div>
                                     <div class="signature">
                                         Образование
                                     </div>
                                     <div class="inf-drag-drop">
-                                        БГУ
+                                        {member.education}
                                     </div>
                                     <div class="signature">
                                         Награды, премии
                                     </div>
                                     <div class="inf-drag-drop">
-                                        Премия имени Анатолия Лебедева
+                                        {member.awards}
                                     </div>
                                 </div>
                                 <div class="social-icons">
                                     <div class="inf-drag-drop-title">Свяжись со мной</div>
                                     <div class="signature">Номер телефона</div>
-                                    <div class="inf-drag-drop">+375296438054</div>
+                                    <div class="inf-drag-drop">{member.phone}</div>
                                     <div class="signature">Электронная почта</div>
-                                    <div class="inf-drag-drop">advokat_sergo@gmail.com</div>
+                                    <div class="inf-drag-drop">{member.email}</div>
                                     <div class="signature">Социальные сети</div>
                                     <a href="#">Facebook</a>
                                     <a href="#">LinkedIn</a>
@@ -165,91 +172,65 @@ function AboutUsEmploee() {
                                 </div>
                             </div>
                         </div>
-                        <div class="draggable" draggable="true" id="item2">
-                            <div class="team-member">
-                                <img src=".\images\five_page\person_2.png" alt="Martha Black" />
-                                <div class="inf-member">
-                                    <h3>Martha Black</h3>
-                                    <div class="signature">
-                                        Должность
-                                    </div>
-                                    <p><span class="yellow-text">Помощник адвоката</span></p>
-                                    <div class="signature">
-                                        Стаж работы по специальности
-                                    </div>
-                                    <div class="inf-drag-drop">
-                                        13 лет
-                                    </div>
-                                    <div class="signature">
-                                        Образование
-                                    </div>
-                                    <div class="inf-drag-drop">
-                                        БГУ
-                                    </div>
-                                    <div class="signature">
-                                        Награды, премии
-                                    </div>
-                                    <div class="inf-drag-drop">
-                                        Премия имени Анатолия Лебедева
-                                    </div>
-                                </div>
-                                <div class="social-icons">
-                                    <div class="inf-drag-drop-title">Свяжись со мной</div>
-                                    <div class="signature">Номер телефона</div>
-                                    <div class="inf-drag-drop">+375296438054</div>
-                                    <div class="signature">Электронная почта</div>
-                                    <div class="inf-drag-drop">advokat_sergo@gmail.com</div>
-                                    <div class="signature">Социальные сети</div>
-                                    <a href="#">Facebook</a>
-                                    <a href="#">LinkedIn</a>
-                                    <a href="#">Twitter</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="draggable" draggable="true" id="item3">
-                            <div class="team-member">
-                                <img src=".\images\five_page\person_3.png" alt="Brian Gomez" />
-                                <div class="inf-member">
-                                    <h3>Martha Black</h3>
-                                    <div class="signature">
-                                        Должность
-                                    </div>
-                                    <p><span class="yellow-text">Помощник адвоката</span></p>
-                                    <div class="signature">
-                                        Стаж работы по специальности
-                                    </div>
-                                    <div class="inf-drag-drop">
-                                        13 лет
-                                    </div>
-                                    <div class="signature">
-                                        Образование
-                                    </div>
-                                    <div class="inf-drag-drop">
-                                        БГУ
-                                    </div>
-                                    <div class="signature">
-                                        Награды, премии
-                                    </div>
-                                    <div class="inf-drag-drop">
-                                        Премия имени Анатолия Лебедева
-                                    </div>
-                                </div>
-                                <div class="social-icons">
-                                    <div class="inf-drag-drop-title">Свяжись со мной</div>
-                                    <div class="signature">Номер телефона</div>
-                                    <div class="inf-drag-drop">+375296438054</div>
-                                    <div class="signature">Электронная почта</div>
-                                    <div class="inf-drag-drop">advokat_sergo@gmail.com</div>
-                                    <div class="signature">Социальные сети</div>
-                                    <a href="#">Facebook</a>
-                                    <a href="#">LinkedIn</a>
-                                    <a href="#">Twitter</a>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </section>
-                <div class="dropzone"></div>
+                <div class="dropzone"
+                     onDragOver={handleDragOver}
+                     onDrop={handleDrop}
+                     onDragLeave={handleDragLeave}>
+                    {dropzoneMember ? (
+                        <div
+                            className="draggable"
+                            draggable
+                            id={dropzoneMember.id}
+                            onDragStart={e => handleDragStart(e, dropzoneMember.id)}
+                            onDragEnd={handleDragEnd}
+                            onDoubleClick={handleRemoveFromDropzone}>
+                                <div class="team-member">
+                                <img src={dropzoneMember.imgSrc} alt="John Turner" />
+                                <div class="inf-member">
+                                    <h3>{dropzoneMember.name}</h3>
+                                    <div class="signature">
+                                        Должность
+                                    </div>
+                                    <p><span class="yellow-text">{dropzoneMember.position}</span></p>
+                                    <div class="signature">
+                                        Стаж работы по специальности
+                                    </div>
+                                    <div class="inf-drag-drop">
+                                        {dropzoneMember.experience}
+                                    </div>
+                                    <div class="signature">
+                                        Образование
+                                    </div>
+                                    <div class="inf-drag-drop">
+                                        {dropzoneMember.education}
+                                    </div>
+                                    <div class="signature">
+                                        Награды, премии
+                                    </div>
+                                    <div class="inf-drag-drop">
+                                        {dropzoneMember.awards}
+                                    </div>
+                                </div>
+                                <div class="social-icons">
+                                    <div class="inf-drag-drop-title">Свяжись со мной</div>
+                                    <div class="signature">Номер телефона</div>
+                                    <div class="inf-drag-drop">{dropzoneMember.phone}</div>
+                                    <div class="signature">Электронная почта</div>
+                                    <div class="inf-drag-drop">{dropzoneMember.email}</div>
+                                    <div class="signature">Социальные сети</div>
+                                    <a href="#">Facebook</a>
+                                    <a href="#">LinkedIn</a>
+                                    <a href="#">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    ) : (
+                        console.log(null)
+                      )}
+                </div>
             </div>
             <section class="articles-section">
                 <div class="articles">

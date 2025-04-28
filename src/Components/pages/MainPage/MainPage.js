@@ -1,8 +1,7 @@
 // components/MainPage.jsx
 import React from 'react';
 import './MainPage.css';
-import Header from '../../common/Header/Header';
-import Footer from '../../common/Footer/Footer';
+import Modal from '../../common/Modal/Modal';
 
 
 function MainPage() {
@@ -47,7 +46,7 @@ function MainPage() {
  </div>
  </div>
  </div>
- <Footer />
+ <Modal />
  </div>
  );
 }
