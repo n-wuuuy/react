@@ -49,7 +49,6 @@ button:active {
 }
 
 .recomindation-window::after {
-    content: "Здесь будет отображен наш лучший работник для вашего случая";
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -60,11 +59,13 @@ button:active {
 
 .lawyer-menu{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 .best-lawyer{
     display: flex;
+    align-items: center;
     width: 60vw;
 }
 
@@ -76,7 +77,6 @@ button:active {
 
 .info-lawyer{
     display: flex;
-    flex-direction: column;
 }
 
 .position{
@@ -125,4 +125,50 @@ button:active {
     justify-content: center;
     align-items: center;
     padding: 2vh;
+}
+
+.signature-info{
+    display: flex;
+    color: #666;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.info{
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.info-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+.info-data .signature-info{
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.info-data .info{
+    color: #ffffff;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.lawyer-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.lawyer-links .info{
+    margin-bottom: 1.8vh;
+}
+
+.recomindation-title{
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 2vh 0;
 }

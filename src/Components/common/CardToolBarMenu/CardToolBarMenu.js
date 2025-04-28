@@ -31,6 +31,16 @@ function CardToolBarMenu() {
             photo: './images/five_page/person_2.png',
             cases: [1600, 3000, 65, 110, 45, 580]
           },
+          {
+            name: 'Иванов Петр Иванович',
+            position: 'Юрист по уголовному праву',
+            price: '700 BYN',
+            tel: '3752915334567',
+            mail: 'petr_шмфтщм@mail.com',
+            photo: './images/five_page/person_3.png',
+            cases: [100, 500, 200, 1710, 45, 1580]
+          },
+          
     ]
 
     const [selected, setSelected] = useState(new Set());
@@ -96,6 +106,7 @@ function CardToolBarMenu() {
         />
         ))}
         </div>
+        <div class="recomindation-title">Лучший специалист под ваш запрос:</div>
         <div class="recomindation-window">
         {currentLawyer && (
             <div class="lawyer-menu">
@@ -108,12 +119,40 @@ function CardToolBarMenu() {
                     <div class="info-lawyer">
                         <div class="lawyer-data">
                           <strong>{currentLawyer.name}</strong>
+                          <div class="info"></div>
                           <div class="position">{currentLawyer.position}</div>
-                          <span>Стоимость: {currentLawyer.price}</span><br />
+                          <div class="signature-info">Стоимость:</div>
+                          <div class="info">{currentLawyer.price}</div>
+                          <div class="info-data">
+                            <div class="signature-info">Успешно закрытых дел в области торгового права:</div>
+                            <div class="info">{currentLawyer.cases[0]}</div>
+                          </div>
+                          <div class="info-data">
+                            <div class="signature-info">Успешно закрытых дел в области cтроительного права:</div>
+                            <div class="info">{currentLawyer.cases[1]}</div>
+                          </div>
+                          <div class="info-data">
+                            <div class="signature-info">Успешно закрытых дел в области семейного права:</div>
+                            <div class="info">{currentLawyer.cases[2]}</div>
+                          </div>
+                          <div class="info-data">
+                            <div class="signature-info">Успешно закрытых дел в области уголовного права:</div>
+                            <div class="info">{currentLawyer.cases[3]}</div>
+                          </div>
+                          <div class="info-data">
+                            <div class="signature-info">Успешно закрытых дел в области неправомерная смерть:</div>
+                            <div class="info">{currentLawyer.cases[4]}</div>
+                          </div>
+                          <div class="info-data">
+                            <div class="signature-info">Успешно закрытых дел в области автомобильных аварий:</div>
+                            <div class="info">{currentLawyer.cases[5]}</div>
+                          </div>
                         </div>
                         <div class="lawyer-links">
-                          <a href={`tel:+${currentLawyer.tel}`}>Тел: {currentLawyer.tel}</a><br />
-                          <a href={`mailto:${currentLawyer.mail}`}>Email: {currentLawyer.mail}</a>
+                          <div class="signature-info">Телефон:</div>
+                          <div class="info">+{currentLawyer.tel}</div>
+                          <div class="signature-info">Почта:</div>
+                          <div class="info">{currentLawyer.mail}</div>
                         </div>
                     </div>
                 </div>
